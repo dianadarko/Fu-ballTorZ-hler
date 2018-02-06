@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.fuballtorcount.MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/anzahlToreTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+                android:padding="4dp"/>
+            <Button
+                android:onClick="erhoehungToreTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plus 1"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/anzahlFoulTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+                android:padding="4dp"/>
+            <Button
+                android:onClick="erhoehungFoulsTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plus 1"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/anzahlToreTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+                android:padding="4dp"/>
+            <Button
+                android:onClick="erhoehungToreTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plus 1"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/anzahlFoulTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+                android:padding="4dp"/>
+            <Button
+                android:onClick="erhoehungFoulsTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plus 1"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:onClick="resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ZURÜCKSETZEN"
+        android:layout_margin="8dp"/>
+
+
+
+</LinearLayout>
